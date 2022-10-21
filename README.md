@@ -1,5 +1,15 @@
-# astro-tutorial-1
+# Astro "Build a Blog" Project - Start of Unit 2
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/blog-tutorial-demo/tree/unit-2/start)
 
-The Astro tutorial "Build a Blog" project. State of the code after the end of Unit 1.
+This is the project you'll build with the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/). Use this code to compare to your own, or explore to see how the basics of a blog are built in Astro!
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/astro-tutorial-1)
+This branch contains the state of the project at start of [Unit 2](https://docs.astro.build/en/tutorial/2-pages/). 
+
+
+Checkpoints:
+- [Start of Unit 2](https://github.com/withastro/blog-tutorial-demo/tree/unit-2/start)
+- [Start of Unit 3](https://github.com/withastro/blog-tutorial-demo/tree/unit-3/start)
+- [Start of Unit 4](https://github.com/withastro/blog-tutorial-demo/tree/unit-4/start)
+- [Start of Unit 5](https://github.com/withastro/blog-tutorial-demo/tree/unit-5/start)
+- [Start of Unit 6](https://github.com/withastro/blog-tutorial-demo/tree/unit-6/start)
+- [Complete](https://github.com/withastro/blog-tutorial-demo/tree/complete)
