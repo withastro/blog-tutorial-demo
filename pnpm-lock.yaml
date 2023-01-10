@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@astrojs/rss': ^2.0.0
   astro: ^1.9.1
 
 dependencies:
+  '@astrojs/rss': 2.0.0
   astro: 1.9.1
 
 packages:
@@ -88,6 +90,12 @@ packages:
     engines: {node: ^14.18.0 || >=16.12.0}
     dependencies:
       prismjs: 1.29.0
+    dev: false
+
+  /@astrojs/rss/2.0.0:
+    resolution: {integrity: sha512-qXsmyq2HhnKRA85US6GLelT47VLhdtS0bNq88umqfB2uneB9vWHSLnOJjhN9rv0mUSQjsFYytF4IEznfmNnpkQ==}
+    dependencies:
+      fast-xml-parser: 4.0.13
     dev: false
 
   /@astrojs/telemetry/1.0.1:
@@ -1532,6 +1540,13 @@ packages:
       glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.5
+    dev: false
+
+  /fast-xml-parser/4.0.13:
+    resolution: {integrity: sha512-g+OboAw8ol1FgTHhKLR7ZHcItNudceiY04BBrvqa0JBWoPhi/+e5r4H5AeW+EsQCroJLJwsuOP3dD3c6cc5uOg==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
     dev: false
 
   /fastq/1.13.0:
@@ -3162,6 +3177,10 @@ packages:
   /strip-final-newline/3.0.0:
     resolution: {integrity: sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw==}
     engines: {node: '>=12'}
+    dev: false
+
+  /strnum/1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
     dev: false
 
   /style-to-object/0.3.0:
