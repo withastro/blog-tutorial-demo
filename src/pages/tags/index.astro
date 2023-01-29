@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const allPosts = await getCollection("posts");
-const tags = [...new Set(allPosts.map((post) => post.data.tags || []).flat())];
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 const pageTitle = "Tag Index";
 ---
 <BaseLayout pageTitle={pageTitle}>
