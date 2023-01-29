@@ -8,8 +8,8 @@ export async function getStaticPaths() {
     params: { slug: entry.slug }, props: { entry },
   }));
 }
+
 const { entry } = Astro.props;
-console.log(entry);
 const { Content } = await entry.render();
 ---
 <MarkdownPostLayout frontmatter={entry.data}>
