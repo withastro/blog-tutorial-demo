@@ -1,4 +1,4 @@
-# Astro "Build a Blog" Project - Completed
+# Astro "Build a Blog" Project - Completed with Content Collections
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/blog-tutorial-demo/tree/content-collections)
 
 This is the project you'll build with the [Astro Tutorial](https://docs.astro.build/en/tutorial/0-introduction/). Use this code to compare to your own, or explore to see how the basics of a blog are built in Astro!
