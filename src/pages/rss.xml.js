@@ -11,8 +11,6 @@ export async function get(context) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      // Compute RSS link from post `slug`
-      // This example assumes all posts are rendered as `/blog/[slug]` routes
       link: `/posts/${post.slug}/`,
     })),
   });
