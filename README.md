@@ -13,3 +13,7 @@ Checkpoints:
 - [Start of Unit 5](https://github.com/withastro/blog-tutorial-demo/tree/unit-5/start)
 - [Start of Unit 6](https://github.com/withastro/blog-tutorial-demo/tree/unit-6/start)
 - [Complete](https://github.com/withastro/blog-tutorial-demo/tree/complete)
+
+Extension:
+You can also see a guided walkthrough in Astro Docs to [convert this project to use content collections](https://docs.astro.build/en/guides/content-collections/#migrating-from-file-based-routing).
+- [Completed project branch using Content Collections](https://github.com/withastro/blog-tutorial-demo/tree/content-collections).
