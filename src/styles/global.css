@@ -82,7 +82,7 @@ a:focus {
   }
 }
 
-.dark body {
+html.dark {
   background-color: #0d0950;
   color: #fff;
 }
