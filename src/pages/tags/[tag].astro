@@ -1,4 +1,5 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogPost from "../../components/BlogPost.astro";
 
@@ -18,6 +19,10 @@ export async function getStaticPaths() {
       props: { posts: filteredPosts },
     };
   });
+}
+
+type Props = {
+  posts: CollectionEntry<'posts'>[];
 }
 
 const { tag } = Astro.params;
