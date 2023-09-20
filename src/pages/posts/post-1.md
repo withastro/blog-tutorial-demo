@@ -5,8 +5,8 @@ pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
 author: "Astro Learner"
 image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
-  alt: "The Astro logo with the word One."
+  url: 'https://astro.build/_astro/blog-hero-post-header.6f7a82e3.webp'
+  alt: 'A purple glowing globe with the phrase Welcome World in several languages.'
 tags: ["astro", "blogging", "learning in public"]
 ---
 
