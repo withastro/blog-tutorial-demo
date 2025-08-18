@@ -23,6 +23,8 @@ h1 {
 /* nav styles */
 
 .hamburger {
+  background: transparent;
+  border: none;
   padding-right: 20px;
   cursor: pointer;
 }
