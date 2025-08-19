@@ -41,7 +41,7 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: transparent;
   display: none;
   margin: 0;
 }
@@ -61,7 +61,7 @@ h1 {
   background-color: #ff9776;
 }
 
-.expanded {
+.hamburger[aria-expanded="true"] ~ .nav-links {
   display: unset;
 }
 
@@ -87,6 +87,11 @@ h1 {
 html.dark {
   background-color: #0d0950;
   color: #fff;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #000;
 }
 
 .dark .nav-links a {

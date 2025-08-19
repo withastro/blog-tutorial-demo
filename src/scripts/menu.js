@@ -1,3 +1,6 @@
-document.querySelector('.hamburger').addEventListener('click', () => {
-  document.querySelector('.nav-links').classList.toggle('expanded');
+const hamburger = document.querySelector('.hamburger')
+
+hamburger.addEventListener('click', () => {
+  const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !isExpanded);
 });
