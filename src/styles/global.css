@@ -24,6 +24,7 @@ h1 {
 
 .hamburger {
   background: transparent;
+  display: block;
   border: none;
   padding-right: 20px;
   cursor: pointer;
@@ -41,7 +42,6 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: transparent;
   display: none;
   margin: 0;
 }
