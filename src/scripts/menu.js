@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('.menu')
+const menu = document.querySelector('.menu')
 
-hamburger.addEventListener('click', () => {
-  const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-  hamburger.setAttribute('aria-expanded', !isExpanded);
+menu.addEventListener('click', () => {
+  const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+  menu.setAttribute('aria-expanded', !isExpanded);
 });
