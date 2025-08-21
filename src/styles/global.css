@@ -92,6 +92,10 @@ html.dark {
   color: #0d0950;
 }
 
-.dark a {
+.dark .nav-links a {
   color: #fff;
+}
+
+.dark a {
+  color: #ff9776;
 }
