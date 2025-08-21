@@ -22,21 +22,15 @@ h1 {
 
 /* nav styles */
 
-.hamburger {
-  background: transparent;
-  display: block;
+.menu {
+  background-color: #0d0950;
   border: none;
-  padding-right: 20px;
-  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
-}
 
 .nav-links {
   width: 100%;
@@ -54,6 +48,7 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #0d0950;
 }
 
 .nav-links a:hover,
@@ -61,7 +56,7 @@ h1 {
   background-color: #ff9776;
 }
 
-.hamburger[aria-expanded="true"] ~ .nav-links {
+:has(.menu[aria-expanded="true"]) .nav-links {
   display: unset;
 }
 
@@ -79,7 +74,7 @@ h1 {
     padding: 15px 20px;
   }
 
-  .hamburger {
+  .menu {
     display: none;
   }
 }
@@ -89,9 +84,14 @@ html.dark {
   color: #fff;
 }
 
+.dark .menu {
+  background-color: #fff;
+  color: #000;
+}
+
 .dark .nav-links a:hover,
 .dark .nav-links a:focus {
-  color: #000;
+  color: #0d0950;
 }
 
 .dark .nav-links a {
