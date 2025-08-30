@@ -5,10 +5,10 @@ import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <header>
-  <nav aria-label="Main menu">
+  <nav>
     <div>
-      <Menu />
       <ThemeIcon />
+      <Menu />
     </div>
     <Navigation />
   </nav>
@@ -17,5 +17,6 @@ import ThemeIcon from "./ThemeIcon.astro";
 <style>
   div {
     display: flex;
+    justify-content: space-between;
   }
 </style>
