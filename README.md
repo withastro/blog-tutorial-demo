@@ -5,15 +5,4 @@ This is the project you'll build with the [Astro Tutorial](https://docs.astro.bu
 
 This branch contains the state of the project after completing the final unit, [Unit 6](https://docs.astro.build/en/tutorial/6-islands/3/), and migrating to content collections.
 
-
-Checkpoints:
-- [Start of Unit 2](https://github.com/withastro/blog-tutorial-demo/tree/unit-2/start)
-- [Start of Unit 3](https://github.com/withastro/blog-tutorial-demo/tree/unit-3/start)
-- [Start of Unit 4](https://github.com/withastro/blog-tutorial-demo/tree/unit-4/start)
-- [Start of Unit 5](https://github.com/withastro/blog-tutorial-demo/tree/unit-5/start)
-- [Start of Unit 6](https://github.com/withastro/blog-tutorial-demo/tree/unit-6/start)
-- [Complete](https://github.com/withastro/blog-tutorial-demo/tree/complete)
-
-Extension:
-You can also see a guided walkthrough in Astro Docs to [convert this project to use content collections](https://docs.astro.build/en/guides/content-collections/#migrating-from-file-based-routing).
-- [Completed project branch using Content Collections](https://github.com/withastro/blog-tutorial-demo/tree/content-collections).
+If you need to compare your project before migrating to content collections, you can use the [`complete` branch](https://github.com/withastro/blog-tutorial-demo/tree/complete).
