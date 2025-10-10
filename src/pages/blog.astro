@@ -1,8 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true })
+);
 const pageTitle = "My Astro Learning Blog";
-const allPosts = Object.values(await import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <BaseLayout pageTitle={pageTitle}>
