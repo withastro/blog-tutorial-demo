@@ -14,10 +14,13 @@ const identity = {
 // ✏️ 改这里：技能列表
 const skills = ["HTML", "CSS", "JavaScript", "Astro", "Cloudflare", "Git","前面提到的全部不会~"];
 
-// ✏️ 改这里：社交链接
+// ✏️ 改这里：社交链接 (⚠️请把中文占位符换成你真实的账号)
 const socialLinks = [
-  { name: "GitHub", url: "https://github.com/shikibe0721" },
-  { name: "首页", url: "/" },
+  { name: "GitHub", url: "https://github.com/shikibe0721", text: "shikibe0721" },
+  { name: "Telegram (电报)", url: "https://t.me/你的电报用户名", text: "@Shikibe0721" },
+  { name: "X (Twitter)", url: "https://x.com/你的X用户名", text: "@Shikibe_MayuX" },
+  { name: "QQ", url: "#", text: "QQ要加先加电报,直接放我会炸;X也行,但是电报和X我不常用,看到回" },
+  { name: "微信 (WeChat)", url: "#", text: "微信要加先加电报,直接放我会炸;X也行,但是电报和X我不常用,看到回" },
 ];
 ---
 
@@ -59,6 +62,22 @@ const socialLinks = [
   a:hover {
     text-decoration: underline;
   }
+  /* 新增：社交链接样式 */
+  .social-list {
+    list-style: none;
+    padding: 0;
+  }
+  .social-list li {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+  .handle {
+    color: #333;
+    background: #f3f4f6;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-family: monospace; /* 等宽字体，适合显示账号 */
+  }
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
@@ -80,10 +99,21 @@ const socialLinks = [
       {skills.map((skill) => <span class="skill">{skill}</span>)}
     </p>
 
-    <h2>🔗 链接</h2>
-    <ul>
+    <h2>🔗 社交链接</h2>
+    <ul class="social-list">
       {socialLinks.map((link) => (
-        <li><a href={link.url} target="_blank">{link.name}</a></li>
+        <li>
+          <strong>{link.name}:</strong> 
+          {
+            link.url !== "#" ? (
+              // 如果是真实网址，渲染为可点击链接
+              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a>
+            ) : (
+              // 如果是QQ/微信，渲染为纯文本样式
+              <span class="handle">{link.text}</span>
+            )
+          }
+        </li>
       ))}
     </ul>
   </div>
