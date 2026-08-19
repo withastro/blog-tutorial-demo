@@ -1,77 +1,90 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "About Me";
+const pageTitle = "关于我 | About";
 
+// ✏️ 改这里：个人信息
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
+  firstName: "Mayu",
+  country: "中国",
+  occupation: "人类",
+  hobbies: ["玩", "听音乐", "探索新技术"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+// ✏️ 改这里：技能列表
+const skills = ["HTML", "CSS", "JavaScript", "Astro", "Cloudflare", "Git","前面提到的全部不会~"];
 
-const happy = true;
-const finished = true;
-const goal = 3;
-
-const skillColor = "crimson";
-const fontWeight = "bold";
-const textCase = "uppercase";
+// ✏️ 改这里：社交链接
+const socialLinks = [
+  { name: "GitHub", url: "https://github.com/shikibe0721" },
+  { name: "首页", url: "/" },
+];
 ---
 
-<style define:vars={{ skillColor, fontWeight, textCase }}>
+<style>
+  .about-card {
+    max-width: 640px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
   h1 {
-    color: purple;
-    font-size: 4rem;
+    color: #6366f1;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    color: #888;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
   }
   .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-    text-transform: var(--textCase);
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.3rem 0.8rem;
+    background: #eef2ff;
+    color: #6366f1;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+  a {
+    color: #6366f1;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 </style>
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
+  <div class="about-card">
+    <h1>你好，我是 {identity.firstName} 👋</h1>
+    <p class="subtitle">来自{identity.country} · {identity.occupation}</p>
 
-  <p>
-    I am working through Astro's introductory tutorial. This is the second page
-    on my website, and it's the first one I built myself!
-  </p>
+    <p>
+      欢迎来到我的博客！这里记录我的技术笔记和生活随笔。
+    </p>
 
-  <p>
-    This site will update as I complete more of the tutorial, so keep checking
-    back and see how my journey is going!
-  </p>
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-  {happy && <p>I am happy to be learning Astro!</p>}
+    <h2>🎯 我的爱好</h2>
+    <ul>
+      {identity.hobbies.map((hobby) => <li>{hobby}</li>)}
+    </ul>
 
-  {finished && <p>I finished this tutorial!</p>}
+    <h2>🛠️ 技能栈</h2>
+    <p>
+      {skills.map((skill) => <span class="skill">{skill}</span>)}
+    </p>
 
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
+    <h2>🔗 链接</h2>
+    <ul>
+      {socialLinks.map((link) => (
+        <li><a href={link.url} target="_blank">{link.name}</a></li>
+      ))}
+    </ul>
+  </div>
 </BaseLayout>
